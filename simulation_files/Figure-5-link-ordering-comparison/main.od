@@ -1,0 +1,34 @@
+[
+	Plots
+	{
+		selector: [],//[=configuration.traffic.pattern.legend_name,],//Make a plot for each value of the selector
+		kind: [
+			Plotkind{
+				bar: true,
+				parameter: =configuration.traffic.pattern.legend_name,
+				abscissas: =configuration.traffic.pattern.legend_name,
+				label_abscissas: "Traffic pattern",
+				ordinates: =mul{first: result.cycle, second: 0.5},
+				label_ordinates: "cycles to finish",
+				min_ordinate: 0.0,
+			},
+			Plotkind{
+				bar: true,
+				parameter: =configuration.traffic.pattern.legend_name,
+				abscissas: =configuration.traffic.pattern.legend_name,
+				label_abscissas: "Traffic pattern",
+				ordinates: =  mul{first:result.accepted_load, second:2},
+				label_ordinates: "throughput",
+				min_ordinate: 0.0,
+			}
+		],
+		legend: [=configuration.routing.legend_name],
+		prefix: "cycles_to_finish",
+		backend: Tikz
+		{
+			tex_filename: "cycles_to_finish.tex",
+			pdf_filename: "cycles_to_finish.pdf",
+		},
+	},
+
+]

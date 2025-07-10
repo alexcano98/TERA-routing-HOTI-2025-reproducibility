@@ -1,0 +1,53 @@
+[
+	Plots
+	{
+		selector: [=configuration.traffic.pattern.legend_name,],	
+		kind: [			
+			Plotkind{
+				parameter: =mul{first: configuration.traffic.load, second: 2},
+				abscissas: =mul{first: configuration.traffic.load, second: 2},
+				label_abscissas: "load",
+				ordinates: =mul{first: result.accepted_load, second: 2},
+				label_ordinates: "accepted load",
+			},
+			Plotkind{
+				parameter: =mul{first: configuration.traffic.load, second: 2},
+				abscissas: =mul{first: configuration.traffic.load, second: 2},
+				label_abscissas: "load",
+				ordinates: =mul{first: result.average_message_delay, second: 1}, //average_packet_network_delay
+				max_ordinate: 1000,
+				label_ordinates: "avg message delay",
+			},
+			Plotkind{
+				parameter: =mul{first: configuration.traffic.load, second: 2},
+				abscissas: =mul{first: configuration.traffic.load, second: 2},
+				label_abscissas: "load",
+				ordinates: =result.server_generation_jain_index,
+				min_ordinate: 0.9,
+				label_ordinates: "jain index",
+			},
+			Plotkind{
+			     label_abscissas: "path length",
+			     label_ordinates: "amount fo packets",
+			     histogram: =result.total_packet_per_hop_count,
+			     min_ordinate: 0.0,
+			     //max_ordinate: 1.0,
+			},
+			Plotkind{
+				parameter: =mul{first: configuration.traffic.load, second: 2},
+				abscissas: =mul{first: configuration.traffic.load, second: 2},
+				label_abscissas: "load",
+				ordinates: =result.average_packet_hops, //average_packet_network_delay
+				label_ordinates: "avg hops",
+				min_ordinate: 0.0,
+			},
+		],
+		legend: [=configuration.routing.legend_name], //configuration.routing.legend_name,
+		prefix: "aaaa",
+		backend: Tikz
+		{
+			tex_filename: "all_metrics.tex",
+			pdf_filename: "all_metrics.pdf",
+		},
+	},
+]
