@@ -1,0 +1,12 @@
+runs/
+tikz_tmp/
+*.iml
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.dvi
+*.xml
+.gitignore

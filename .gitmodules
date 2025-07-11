@@ -1,0 +1,6 @@
+[submodule "caminos"]
+	path = caminos
+	url = https://github.com/alexcano98/caminos.git
+[submodule "caminos-lib"]
+	path = caminos-lib
+	url = https://github.com/alexcano98/caminos-lib.git
