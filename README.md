@@ -13,15 +13,15 @@ This repository contains all code, configuration files, and documentation needed
 ---
 ## 🚀 Key Features of TERA routing algorithm
 
-* Deadlock-free adaptive routing without Virtual Channels
+* Deadlock-free adaptive routing without Virtual Channels in Full-mesh networks.
 * Up to 100% speedup against other link-ordering routing algorithms in Full-Mesh.
 * Up to 32% speedup against other routing algorithms in a 2D-HyperX network with the same resources.
 ---
 
 ## 📁 Repository Structure
 
-* `caminos/` — Small application which implements the caminos-lib library to run simulations.
-* `caminos-lib/` — Library to simulate interconnection networks: [CAMINOS simulator](https://github.com/caminos-simulator/caminos) (commit `abc1234`)
+* `caminos-lib/` — My fork of the [caminos-lib](https://github.com/nakacristo/caminos-lib) library to simulate interconnection networks.
+* `caminos/` — Small application which implements my caminos-lib library to run simulations.
 * `simulation_files/` — Config files for reproducing our experiments. Each directory corresponds to a different experiment in the paper. Each directory contains several simulations.
 * `USAGE.md` — Full usage & configuration documentation
 * `README.md` — Project overview (this file)
@@ -30,14 +30,14 @@ This repository contains all code, configuration files, and documentation needed
 
 ## ⚙️ Prerequisites
 
-Make sure the [Rust toolchain](https://www.rust-lang.org/tools/install) is installed.
+🛠️ To follow the steps below, make sure the [Rust toolchain](https://www.rust-lang.org/tools/install) is installed.
 
 ---
 
 ## 🧪 Quick Start
 
 This repository includes `caminos` and `caminos-lib` as Git submodules.
-To properly clone the repository along with its submodules, use one of the following methods:
+Use the following command to clone the repository:
 
 ```bash
 git clone --recurse-submodules https://github.com/alexcano98/TERA-routing-HOTI-2025-reproducibility.git
@@ -50,8 +50,6 @@ cd TERA-routing-HOTI-2025-reproducibility
 git submodule update --init --recursive
 ````
 
-🛠️ To follow the steps below, make sure the [Rust toolchain](https://www.rust-lang.org/tools/install) is installed.
-
 Enter the `caminos` directory and compile the project:
 ````bash
 cd caminos
@@ -60,8 +58,13 @@ cargo build --release
 Now you can run any experiment from the paper! Example:
 ````bash
 cd simulation_files/Figure-5-link-ordering-comparison
-../../caminos/target/release . -a local #Runs all the experiments from the directory locally.
+../../caminos/target/release/caminos . -a local #Runs all the experiments from the directory defined in the main.cfg.
 ````
+Now, to plot the finished experiments inside any directory run:
+````bash
+../../caminos/target/release/caminos . -a local #Plot the experiment results following the main.od.
+````
+
 
 ---
 
