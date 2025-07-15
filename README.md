@@ -28,8 +28,40 @@ This repository contains all code, configuration files, and documentation needed
 
 ---
 
+## ⚙️ Prerequisites
+
+Make sure the [Rust toolchain](https://www.rust-lang.org/tools/install) is installed.
+
+---
+
 ## 🧪 Quick Start
 
+This repository includes `caminos` and `caminos-lib` as Git submodules.
+To properly clone the repository along with its submodules, use one of the following methods:
+
+```bash
+git clone --recurse-submodules https://github.com/alexcano98/TERA-routing-HOTI-2025-reproducibility.git
+````
+or, if you've already cloned the repository:
+
+```bash
+git clone https://github.com/alexcano98/TERA-routing-HOTI-2025-reproducibility.git
+cd TERA-routing-HOTI-2025-reproducibility
+git submodule update --init --recursive
+````
+
+🛠️ To follow the steps below, make sure the [Rust toolchain](https://www.rust-lang.org/tools/install) is installed.
+
+Enter the `caminos` directory and compile the project:
+````bash
+cd caminos
+cargo build --release
+````
+Now you can run any experiment from the paper! Example:
+````bash
+cd simulation_files/Figure-5-link-ordering-comparison
+../../caminos/target/release . -a local #Runs all the experiments from the directory locally.
+````
 
 ---
 
