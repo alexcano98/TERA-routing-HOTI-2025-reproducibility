@@ -20,9 +20,9 @@ This repository contains all code, configuration files, and documentation needed
 
 ## 📁 Repository Structure
 
-* `caminos-lib/` — My fork of the [caminos-lib](https://github.com/nakacristo/caminos-lib) library to simulate interconnection networks.
-* `caminos/` — Small application which implements my caminos-lib library to run simulations.
-* `simulation_files/` — Config files for reproducing our experiments. Each directory corresponds to a different experiment in the paper. Each directory contains several simulations.
+* `caminos-lib/` — A fork of [caminos-lib](https://github.com/nakacristo/caminos-lib) for simulating interconnection networks.
+- `caminos/` — A lightweight application that uses `caminos-lib` to run simulations.
+- `simulation_files/` — Configuration files for reproducing our experiments. Each subdirectory corresponds to a different experiment from the paper and contains multiple simulations.
 * `USAGE.md` — Full usage & configuration documentation
 * `README.md` — Project overview (this file)
 
@@ -68,15 +68,20 @@ Now, to plot the finished experiments inside any directory run:
 
 ---
 
-## 📘 Reproducing the Results
+[//]: # (## 📘 Reproducing the Results)
 
-See [`USAGE.md`](./USAGE.md) for full instructions on:
+[//]: # ()
+[//]: # (See [`USAGE.md`]&#40;./USAGE.md&#41; for full instructions on:)
 
-* Setting up CAMINOS
-* Modifying simulation parameters
-* Reproducing specific experiments from the paper
+[//]: # ()
+[//]: # (* Setting up CAMINOS)
 
----
+[//]: # (* Modifying simulation parameters)
+
+[//]: # (* Reproducing specific experiments from the paper)
+
+[//]: # ()
+[//]: # (---)
 
 ## ✉️ Authors & Contact
 
@@ -89,7 +94,7 @@ See [`USAGE.md`](./USAGE.md) for full instructions on:
 
 ## 📄 Citation
 
-If you use TERA in your work, please cite:
+If you use TERA in your work, please cite (TODO):
 
 ```bibtex
 @inproceedings{
