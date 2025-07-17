@@ -62,26 +62,11 @@ cd simulation_files/Figure-5-link-ordering-comparison
 ````
 Now, to plot the finished experiments inside any directory run:
 ````bash
-../../caminos/target/release/caminos . -a local #Plot the experiment results following the main.od.
+../../caminos/target/release/caminos . -a output #Plot the experiment results following the main.od.
 ````
-
 
 ---
 
-[//]: # (## 📘 Reproducing the Results)
-
-[//]: # ()
-[//]: # (See [`USAGE.md`]&#40;./USAGE.md&#41; for full instructions on:)
-
-[//]: # ()
-[//]: # (* Setting up CAMINOS)
-
-[//]: # (* Modifying simulation parameters)
-
-[//]: # (* Reproducing specific experiments from the paper)
-
-[//]: # ()
-[//]: # (---)
 
 ## ✉️ Authors & Contact
 
