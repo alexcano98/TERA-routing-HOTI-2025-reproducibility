@@ -41,7 +41,9 @@ You can symlink or add it to your PATH for convenience.
 
 ## 🚀 Running Simulations
 
-All simulations used in the paper are organized under the `simulation_files/` directory. Each experiment has its own subdirectory containing:
+All simulations used in the paper are organized under the `simulation_files/` directory.
+Each directory contains all the simulations corresponding to one Figure of the paper.
+The files contained in each directory are:
 
 - `main.cfg`: file which define the parameters for the simulations to run in that directory.
 - `main.od`: file which define the parameters to extract plots from the simulations results.
@@ -86,7 +88,12 @@ Some parameters of the `main.cfg` are:
 `map: Identity, logical_routing: DOR{order:[0, 1]}, opportunistic_hops: true` \
 `}` - TERA routing with a 2D-HyperX 8x8 service topology.
 
-For more information about the simulator
+For more information about the simulator run under the `caminos-lib/` directory:
+```bash
+cargo doc
+```
+
+And documentation will be generated at `target/doc/caminos_lib/index.html`.
 
 ---
 
