@@ -42,11 +42,9 @@ Use the following command to clone the repository:
 ```bash
 git clone --recurse-submodules https://github.com/alexcano98/TERA-routing-HOTI-2025-reproducibility.git
 ````
-or, if you've already cloned the repository:
+or, if you've already cloned the repository without cloning the submodules:
 
 ```bash
-git clone https://github.com/alexcano98/TERA-routing-HOTI-2025-reproducibility.git
-cd TERA-routing-HOTI-2025-reproducibility
 git submodule update --init --recursive
 ````
 
