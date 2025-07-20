@@ -8,7 +8,7 @@
 				parameter: =configuration.traffic.pattern.legend_name,
 				abscissas: =configuration.traffic.pattern.legend_name,
 				label_abscissas: "Traffic pattern",
-				ordinates: =mul{first: result.cycle, second: 0.5},
+				ordinates: =mul{first: result.cycle, second: 0.5},//as the parameter general_frequency_divisor in main.cfg is 2, the total real cycles is half of the cycles in the result.
 				label_ordinates: "cycles to finish",
 				min_ordinate: 0.0,
 			},
@@ -17,7 +17,7 @@
 				parameter: =configuration.traffic.pattern.legend_name,
 				abscissas: =configuration.traffic.pattern.legend_name,
 				label_abscissas: "Traffic pattern",
-				ordinates: =  mul{first:result.accepted_load, second:2},
+				ordinates: =  mul{first:result.accepted_load, second:2},//as the parameter general_frequency_divisor in main.cfg is 2, the real accepted load is twice the one in the result.
 				label_ordinates: "throughput",
 				min_ordinate: 0.0,
 			}

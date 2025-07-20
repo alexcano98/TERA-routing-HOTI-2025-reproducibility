@@ -7,20 +7,20 @@
 				parameter: =mul{first: configuration.traffic.load, second: 2},
 				abscissas: =mul{first: configuration.traffic.load, second: 2},
 				label_abscissas: "load",
-				ordinates: =mul{first: result.accepted_load, second: 2},
+				ordinates: =mul{first: result.accepted_load, second: 2}, //as the parameter general_frequency_divisor in main.cfg is 2, the real accepted load is twice the one in the result.
 				label_ordinates: "accepted load",
 			},
 			Plotkind{
 				parameter: =mul{first: configuration.traffic.load, second: 2},
 				abscissas: =mul{first: configuration.traffic.load, second: 2},
 				label_abscissas: "load",
-				ordinates: =mul{first: result.average_message_delay, second: 1}, //average_packet_network_delay
+				ordinates: =result.average_message_delay,
 				max_ordinate: 1000,
 				label_ordinates: "avg message delay",
 			},
 			Plotkind{
-				parameter: =mul{first: configuration.traffic.load, second: 2},
-				abscissas: =mul{first: configuration.traffic.load, second: 2},
+				parameter: =mul{first: configuration.traffic.load, second: 2}, //as the parameter general_frequency_divisor in main.cfg is 2, the real accepted load is twice the one in the result.
+				abscissas: =mul{first: configuration.traffic.load, second: 2}, //as the parameter general_frequency_divisor in main.cfg is 2, the real accepted load is twice the one in the result.
 				label_abscissas: "load",
 				ordinates: =result.server_generation_jain_index,
 				min_ordinate: 0.9,
@@ -34,8 +34,8 @@
 			     //max_ordinate: 1.0,
 			},
 			Plotkind{
-				parameter: =mul{first: configuration.traffic.load, second: 2},
-				abscissas: =mul{first: configuration.traffic.load, second: 2},
+				parameter: =mul{first: configuration.traffic.load, second: 2}, //as the parameter general_frequency_divisor in main.cfg is 2, the real accepted load is twice the one in the result.
+				abscissas: =mul{first: configuration.traffic.load, second: 2}, //as the parameter general_frequency_divisor in main.cfg is 2, the real accepted load is twice the one in the result.
 				label_abscissas: "load",
 				ordinates: =result.average_packet_hops, //average_packet_network_delay
 				label_ordinates: "avg hops",

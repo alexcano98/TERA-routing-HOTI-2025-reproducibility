@@ -9,7 +9,7 @@
 				abscissas: =configuration.traffic.map.legend_name,
 				label_abscissas: "",
 				ordinates: =result.cycle,
-			     	min_ordinate: 0.0,
+                min_ordinate: 0.0,
 				label_ordinates: "cycles to finish",
 			},
 		],

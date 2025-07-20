@@ -2,7 +2,7 @@
 
 ## 🛠️ Installation & Setup
 
-This guide will help you set up the environment and run the TERA simulations using the CAMINOS simulator.
+This guide will help you set up the environment and run the simulations.
 
 ---
 
@@ -78,14 +78,15 @@ This uses `main.od` to plot performance metrics. Output files will be saved in t
 
 ---
 
-### 3. Simulation Parameters
+### 3. Generate documentation
 
 For more information about the simulator run under the `caminos-lib/` directory:
 ```bash
 cargo doc
 ```
 
-And documentation will be generated at `target/doc/caminos_lib/index.html`.
+And documentation will be generated under `caminos-lib/target/doc/caminos_lib/index.html`.
+Specific documentation of TERA (implemented as `SubTopologyRouting`) is available at `caminos-lib/target/doc/caminos_lib/routing/extra/struct.SubTopologyRouting.html` along with the source code.
 
 ---
 
@@ -93,7 +94,7 @@ And documentation will be generated at `target/doc/caminos_lib/index.html`.
 
 ## 📬 Questions or Contributions
 
-Feel free to contact the authors (see `README.md`) or reach out to:
+Feel free to contact if you have any questions or suggestions:
 
 📧 [alejandro.cano@unican.es](mailto\:alejandro.cano@unican.es)
 
