@@ -80,14 +80,6 @@ This uses `main.od` to plot performance metrics. Output files will be saved in t
 
 ### 3. Simulation Parameters
 
-Some parameters of the `main.cfg` are:
-
-- `topology: Hamming{servers_per_router:64,	sides:[64]}` -  Full-mesh topology with 64 switches and 64 servers per switch (4096 servers in total).
-- `routing: SubTopologyRouting{`\
-`logical_topology: Hamming{ servers_per_router: 2, sides:[8, 8],}`\
-`map: Identity, logical_routing: DOR{order:[0, 1]}, opportunistic_hops: true` \
-`}` - TERA routing with a 2D-HyperX 8x8 service topology.
-
 For more information about the simulator run under the `caminos-lib/` directory:
 ```bash
 cargo doc

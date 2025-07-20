@@ -63,6 +63,8 @@ Now, to plot the finished experiments inside any directory run:
 ../../caminos/target/release/caminos . -a output #Plot the experiment results following the main.od.
 ````
 
+For more a more detailed explanation, go to [USAGE.md](USAGE.md).
+
 ---
 
 
@@ -89,4 +91,4 @@ If you use TERA in your work, please cite (TODO):
 
 ## 📜 License
 
-This project is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
+This project is licensed under the MIT License. See [LICENSE](LICENSE.md) for details.

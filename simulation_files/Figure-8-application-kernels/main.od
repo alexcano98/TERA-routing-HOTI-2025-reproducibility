@@ -1,12 +1,12 @@
 [
 	Plots
 	{
-		selector: [=configuration.traffic.map.legend_name, =configuration.traffic.application.legend_name],	
+		selector: [=configuration.traffic.application.legend_name],	
 		kind: [
 			Plotkind{
 				bar:true,
-				parameter: =configuration.traffic.application.legend_name, 
-				abscissas: =configuration.traffic.application.legend_name, 
+				parameter: =configuration.traffic.map.legend_name, 
+				abscissas: =configuration.traffic.map.legend_name,
 				label_abscissas: "",
 				ordinates: =result.cycle,
 			     	min_ordinate: 0.0,
