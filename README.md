@@ -20,8 +20,8 @@ This repository contains all code, configuration files, and documentation needed
 
 ## 📁 Repository Structure
 
-* [`caminos-lib/`](./caminos-lib) — A fork of [caminos-lib](https://github.com/nakacristo/caminos-lib) used to simulate interconnection networks.
-* [`caminos/`](./caminos) — A lightweight application that integrates `caminos-lib` to execute simulations.
+* [`caminos-lib`](https://github.com/alexcano98/caminos-lib) — Included as a Git submodule. This is a custom fork of [`caminos-lib`](https://github.com/nakacristo/caminos-lib), originally published as a Rust crate on [crates.io](https://crates.io/crates/caminos-lib), for simulating interconnection networks.
+* [`caminos`](https://github.com/alexcano98/caminos) — Also included as a Git submodule. This lightweight application integrates the forked `caminos-lib` to execute simulations.
 * [`simulation_files/`](./simulation_files) — Configuration files used to reproduce the experiments presented in the paper. Each subdirectory corresponds to a specific experiment and includes multiple simulation setups.
 * [`USAGE.md`](./USAGE.md) — Complete usage and configuration instructions.
 * [`README.md`](./README.md) — Project overview (this file).
