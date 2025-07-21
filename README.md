@@ -20,11 +20,12 @@ This repository contains all code, configuration files, and documentation needed
 
 ## 📁 Repository Structure
 
-* `caminos-lib/` — A fork of [caminos-lib](https://github.com/nakacristo/caminos-lib) for simulating interconnection networks.
-- `caminos/` — A lightweight application that uses `caminos-lib` to run simulations.
-- `simulation_files/` — Configuration files for reproducing our experiments. Each subdirectory corresponds to a different experiment from the paper and contains multiple simulations.
-* `USAGE.md` — Full usage & configuration documentation
-* `README.md` — Project overview (this file)
+* [`caminos-lib/`](./caminos-lib) — A fork of [caminos-lib](https://github.com/nakacristo/caminos-lib) used to simulate interconnection networks.
+* [`caminos/`](./caminos) — A lightweight application that integrates `caminos-lib` to execute simulations.
+* [`simulation_files/`](./simulation_files) — Configuration files used to reproduce the experiments presented in the paper. Each subdirectory corresponds to a specific experiment and includes multiple simulation setups.
+* [`USAGE.md`](./USAGE.md) — Complete usage and configuration instructions.
+* [`README.md`](./README.md) — Project overview (this file).
+
 
 ---
 
