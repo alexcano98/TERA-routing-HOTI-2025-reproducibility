@@ -41,14 +41,14 @@ You can symlink or add it to your PATH for convenience.
 
 ## 🚀 Running Simulations
 
-All simulations used in the paper are organized under the `simulation_files/` directory.
-Each directory contains all the simulations corresponding to one Figure of the paper.
-The files contained in each directory are:
+All simulations used in the paper are organized in subdirectories under the `simulation_files/` directory.
+Each subdirectory contains all the simulations corresponding to one figure of the paper.
+The elements contained in each subdirectory are:
 
 - `main.cfg`: file which define the parameters for the simulations to run in that directory.
 - `main.od`: file which define the parameters to extract plots from the simulations results.
 - `outputs/`: directory that stores the plots defined in the main.od
-- `runs/`: directory that save the results of all the simulations in the directory. Each simulation result is saved with its configuration file.
+- `runs/`: directory that save the results of all the simulations in the directory. Each simulation result is saved in a subdirectory named `run<index>`.
 - `journal`: file that logs the actions performed in a simulation directory.
 - *(Optional)* `remote`: file that stores the credentials of a remote machine to run simulations there.
 
